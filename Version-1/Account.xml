@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="Account" path="/pos/v1/201903/account/poslogin" id="a261112b-4124-44f9-b31a-3e6583074065" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a261112b-4124-44f9-b31a-3e6583074065fileName">Account</con:setting></con:settings><con:parameters/><con:method name="Maret 2019" id="e64f2367-9475-424f-9a0c-a4b6754218af" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>202 200</con:status><con:params/><con:element xmlns:pos="http://localhost/pos/v1/201812/account/poslogin">pos:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>434 404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="POS Login" id="455e1b25-9863-451b-94d0-79d91c8a724d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://mypopplus.azurewebsites.net</con:endpoint><con:request>{
+<con:resource name="Account" path="/pos/v1/201903/account/userlogout" id="a261112b-4124-44f9-b31a-3e6583074065" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a261112b-4124-44f9-b31a-3e6583074065fileName">Account</con:setting></con:settings><con:parameters/><con:method name="Maret 2019" id="e64f2367-9475-424f-9a0c-a4b6754218af" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>202 200</con:status><con:params/><con:element xmlns:pos="http://localhost/pos/v1/201812/account/poslogin">pos:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>434 404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="User Login" id="455e1b25-9863-451b-94d0-79d91c8a724d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://mypopplus.azurewebsites.net</con:endpoint><con:request>{
   "urn:credentials":
   {
 	"sim:AccountName": "gpites01+eventstore.pos01@gmail.com",
 	"sim:ManagementGroup": "LOYALTY_POINTOFSALE",
 	"sim:SecurityCode": "3sjjY5yWKtE@7dDY"
+  }
+}</con:request><con:originalUri>http://localhost/pos/v1/201812/account/poslogin</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="User Logout" id="455e1b25-9863-451b-94d0-79d91c8a724d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:31013</con:endpoint><con:request>{
+  "UserData":
+  {
+	"Username": "userpos1"
+  },
+  "DeviceData":
+  {
+	"Brand"		: "HMD Global TA-1021",
+	"Imei"		: "356048081307232",
+	"Serial"	: "8962100511422518843",
+	"DeviceID"	: "356048081307232",
+	"OS"		: "Android SDK: 27 (8.1.0)"
   }
 }</con:request><con:originalUri>http://localhost/pos/v1/201812/account/poslogin</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource>
